@@ -1,27 +1,36 @@
-# Technoknights
+Technoknights 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
+Une image Docker d’une application Angular qui permet de gérer un ensemble des évènements à travers une calendrier.
 
-## Development server
+Cette image est basée sur node:11.3.0:
+@angular/cli@7.1.1
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Etape de construction :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1- Nous avons créé une application Angular, vous pouvez consulter le code source de l'application à partir de repository 
+https://github.com/teheniGrine/technoknights
 
-## Build
+2- Créer les fichiers :
+	-Dockerfile (https://hub.docker.com/r/teheni/technoknights/~/dockerfile/)
+	-.dockerignore
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3- Faire docker build –t  teheni/technoknights .
+4- Faire docker push teheni/technoknights
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ 
+Installation de l’application 
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1- Vous pouvez exécuter docker pull et docker run
+docker pull teheni/technoknights
+docker run -rm -it -p 127.0.0.1:4200:4200 teheni/technoknights
 
-## Further help
+2- Aller vers l'url http://localhost:4200
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+
